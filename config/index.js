@@ -7,10 +7,14 @@ module.exports = {
   siteUrl: "https://silsila.co.uk", // Domain of your site. No trailing slash!
   siteLanguage: "en", // Language Tag on <html> element
   siteLogo: "/logos/logo.png", // Used for SEO and manifest
-  siteDescription: "UI / UX Developer",
+  siteDescription: "UI / UX Designer",
   author: "Silsila", // Author for schema.org JSONLD
-
+  headline: "UI / UX Designer",
   // siteFBAppID: '123456789', // Facebook App ID - Optional
+  userTwitter: "@silsila", // Twitter Username
+  ogSiteName: "Silsila", // Facebook Site Name
+  ogLanguage: "en_US", // og:language
+  googleAnalyticsID: "UA-XXXXXX-X",
 
   // Manifest and Progress color
   themeColor: "#db7436",
