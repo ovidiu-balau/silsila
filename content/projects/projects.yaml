@@ -1,0 +1,37 @@
+- title: "kindcody"
+  title_detail: "kindcody"
+  category: "App / Web / Branding"
+  slug: "/kindcody"
+  color: "#73c5bb"
+  images: "kindcody"
+  cover: "./kindcody/projects-kindcody-cover.jpg"
+  desc: "kindcody is an online therapy service that connects counsellors with people in need of counselling. Our platform assists our users with their client base, calendar management and helps them create new connections. Our features range from simple bookings all the way to an online counselling community which enables the growth of their session quality.<br/><br/>
+  Customers are the heart of kindcody and to ensure we do not break it we thoroughly vet all of our counsellors. Our bookings are entirely private between the user and the counsellor with HIPAA compliances as well as end-to-end encryption. We believe in doing the right thing and provide an affordable service regardless of the topic of discussion.<br/><br/><br/>
+  My role in kindcody was creating the brand, brand guidelines, website design and app design for the first phase of the business. The team had a leadership mixture of a software developer, business strategist and creative director.<br/><br/>
+  After sessions of brainstorming with different word combinations, colours schemes and researching the competitors, my team and I hand picked a green pastel as a primary colour because of the representation and reputation it has in the medical industry. To emphasise the emotion of safety, the font we’ve picked for the logo makes use of softer edges and bolder letters which helps us emphasise the emotion we’re trying to showcase"
+- title: "Filed"
+  title_detail: "Filed"
+  category: "UI / UX"
+  slug: "filed"
+  color: "#dcf7ff"
+  images: "filed"
+  cover: "./filed/cover.jpg"
+  desc: "I started by reading over the brief as many times as necessary to thoroughly understand it. After understanding the brief, I’ve gone over the current filed.com website to understand the product. Once I understood what the filed company is, I then noted down some of the features I liked, sections that were complex and features that could be simplified. <br/><br/>
+  The next step I took after analysing the current website was researching into some of the competitors. I attempted to analyse some of their landing pages and learned they were using different techniques to showcase their products and captivate the user’s attention with differently placed call to action buttons. My target from this was to create a user experience that focuses on big headlines, attractive illustrations and call to actions. Through trial and error I’ve picked a lighter version of the red available in the current brand to use throughout the website. However, the UI had a female audience focused UI feel rather than a successful tech company. With the blue available I have made it softer and used it throughout the website to reinforce the friendly corporate tech. <br/><br/>
+  I’ve made use of heavy and catchy headlines to ensure the user’s attention is drawn directly to the unique selling point. On the top section of the website I’ve added 3 call to action buttons to maximise the lead generation potential. I’ve used the same technique at the bottom of the page to reinforce the feeling of trying the product if they made it so far down the page.<br/><br/>
+  My decision of hiding the menu in a hamburger was due to the main goal of the website being selling. However, some of the more important hidden pages, which switch their focus over to informing and demonstrating, are also accessible through call to action buttons throughout the landing page.<br/><br/>"
+- title: "catnanny"
+  title_detail: "catnanny"
+  cover: "./catnanny/cover.jpg"
+  category: "UI / UX"
+  slug: "catnanny"
+  color: "#ff7876"
+  images: "catnanny"
+- title: "illustrations"
+  slug: "other"
+  title_detail: "Illustrations"
+  cover: "./other/projects-other-cover.jpg"
+  category: "Free time illustrations"
+  color: "#ff7876"
+  images: "other"
+  
