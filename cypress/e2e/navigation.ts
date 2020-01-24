@@ -39,7 +39,7 @@ describe("navigation", () => {
     });
     cy.findByText(/Hi. I'm LekoArts!/i)
       .assertRoute("/about")
-      .findByLabelText(/Silsila, back Home/i)
+      .findByLabelText(/LekoArts, Back to home/i)
       .click({ force: true })
       .waitForRouteChange()
       .assertRoute("/");

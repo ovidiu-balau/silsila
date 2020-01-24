@@ -155,6 +155,15 @@ const Nav = styled(Flex)<{ color: string }>`
     color: ${props => readableColor(`${props.color}`)};
     font-size: ${props => props.theme.fontSizes[3]};
     line-height: 1.5;
+    &.small {
+      font-size: 18px !important;
+    }
+    &.cv {
+      font-size: 18px;
+      margin-top: 20px;
+      border: 1px solid black;
+      padding: 8px 16px;
+    }
     &:hover,
     &:focus,
     &.navlink-active {
@@ -260,6 +269,19 @@ const Layout = ({ children, color }: LayoutProps) => {
                     {item.name}
                   </PartialNavLink>
                 ))}
+                <a
+                  className="navlink small"
+                  href="mailto:hi@silsila.co.uk"
+                  style={{ marginTop: 20 }}
+                >
+                  hi@silsila.co.uk
+                </a>
+                <a className="navlink small" href="tel:07502005836">
+                  07502 005 836
+                </a>
+                <a className="navlink cv" target="_blank" href="/cv.pdf">
+                  Download resume
+                </a>
               </Nav>
             </Flex>
           </SideBarInner>
