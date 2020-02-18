@@ -1,24 +1,24 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import styled from 'styled-components'
-import { config, animated, useSpring } from 'react-spring'
-import Layout from '../components/layout'
-import GridItem from '../components/grid-item'
-import SEO from '../components/SEO'
-import { ChildImageSharp } from '../types'
+import React from "react";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
+import styled from "styled-components";
+import { config, animated, useSpring } from "react-spring";
+import Layout from "../components/layout";
+import GridItem from "../components/grid-item";
+import SEO from "../components/SEO";
+import { ChildImageSharp } from "../types";
 
 type PageProps = {
   data: {
     projects: {
       nodes: {
-        title: string
-        slug: string
-        cover: ChildImageSharp
-      }[]
-    }
-  }
-}
+        title: string;
+        slug: string;
+        cover: ChildImageSharp;
+      }[];
+    };
+  };
+};
 
 const Area = styled(animated.div)`
   display: grid;
@@ -29,31 +29,37 @@ const Area = styled(animated.div)`
     grid-template-columns: 1fr;
     grid-auto-rows: 60vw;
   }
-`
+`;
 
-const Projects: React.FunctionComponent<PageProps> = ({ data: { projects } }) => {
+const Projects: React.FunctionComponent<PageProps> = ({
+  data: { projects }
+}) => {
   const pageAnimation = useSpring({
     config: config.slow,
     from: { opacity: 0 },
-    to: { opacity: 1 },
-  })
+    to: { opacity: 1 }
+  });
 
   return (
     <Layout color="#000">
-      <SEO title="Projects | Jodie" />
+      <SEO title="Projects | Silsila Hamdard" />
       <Area style={pageAnimation}>
         {projects.nodes.map(project => (
-          <GridItem key={project.slug} to={project.slug} aria-label={`View project "${project.title}"`}>
+          <GridItem
+            key={project.slug}
+            to={project.slug}
+            aria-label={`View project "${project.title}"`}
+          >
             <Img fluid={project.cover.childImageSharp.fluid} />
             <span>{project.title}</span>
           </GridItem>
         ))}
       </Area>
     </Layout>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
 
 export const query = graphql`
   query Projects {
@@ -71,4 +77,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
