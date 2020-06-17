@@ -2,8 +2,8 @@
   title_detail: "Ksubaka"
   category: "UI Design"
   slug: "ksubaka-ui"
-  color: "#EA516A",
-  images: "kindcody",
+  color: "#EA516A"
+  images: "kindcody"
   cover: "./kindcody/projects-kindcody-cover.jpg"
 - title: "kindcody"
   title_detail: "kindcody"
