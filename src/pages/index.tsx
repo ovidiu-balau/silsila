@@ -54,6 +54,7 @@ const Area = styled(animated.div)`
   }
 
   @media (max-width: ${props => props.theme.breakpoints[0]}) {
+    
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 50vw);
 
@@ -70,7 +71,7 @@ const FirstProject = styled(GridItem)`
   grid-area: first-project;
 `;
 
-const AboutUs = styled(GridItem)`
+const SecondProject = styled(GridItem)`
   grid-area: about-us;
 `;
 
@@ -85,12 +86,9 @@ const ThreeProjects = styled.div`
   }
 `;
 
-const Instagram = styled(GridItem)`
-  grid-area: instagram;
-`;
 
 const Index: React.FunctionComponent<PageProps> = ({
-  data: { firstProject, threeProjects, aboutUs, instagram }
+  data: { firstProject, secondProject, threeProjects }
 }) => {
   const pageAnimation = useSpring({
     config: config.slow,
@@ -109,10 +107,15 @@ const Index: React.FunctionComponent<PageProps> = ({
           <Img fluid={firstProject.cover.childImageSharp.fluid} />
           <span>{firstProject.title}</span>
         </FirstProject>
-        <AboutUs to="/about" aria-label="Visit my about page">
-          <Img fluid={aboutUs.childImageSharp.fluid} />
-          <span>about</span>
-        </AboutUs>
+        {secondProject.nodes.map(p => (
+        <SecondProject
+          to={p.slug}
+          aria-label={`View project "${p.title}"`}
+        >
+          <Img fluid={p.cover.childImageSharp.fluid} />
+          <span>{p.title}</span>
+        </SecondProject>
+        ))}
         <ThreeProjects>
           {threeProjects.nodes.map(project => (
             <GridItem
@@ -145,7 +148,7 @@ export const query = graphql`
         }
       }
     }
-    threeProjects: allProjectsYaml(limit: 3, skip: 1) {
+    secondProject: allProjectsYaml(limit: 1, skip: 1) {
       nodes {
         title
         slug
@@ -158,23 +161,16 @@ export const query = graphql`
         }
       }
     }
-    aboutUs: file(
-      sourceInstanceName: { eq: "images" }
-      name: { eq: "about-us" }
-    ) {
-      childImageSharp {
-        fluid(quality: 95, maxWidth: 1200) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    instagram: file(
-      sourceInstanceName: { eq: "images" }
-      name: { eq: "instagram" }
-    ) {
-      childImageSharp {
-        fluid(quality: 95, maxWidth: 1920) {
-          ...GatsbyImageSharpFluid_withWebp
+    threeProjects: allProjectsYaml(limit: 3, skip: 2) {
+      nodes {
+        title
+        slug
+        cover {
+          childImageSharp {
+            fluid(quality: 95, maxWidth: 1200) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
         }
       }
     }

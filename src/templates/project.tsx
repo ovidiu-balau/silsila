@@ -149,10 +149,10 @@ const Project: React.FunctionComponent<PageProps> = ({
         </PBox>
       </Content>
       <PBox style={{ textAlign: "center" }} py={10} px={[6, 6, 8, 10]}>
-        <h2>Let's build your next project</h2>
-        <a href="mailto:silsilahamdard@gmail.com">
+        <h2>Let's design your next project</h2>
+        <a href="mailto:silsilawork@gmail.com">
           <PButton color={project.color} py={4} px={8}>
-            Contact me
+            get in touch
           </PButton>
         </a>
       </PBox>
