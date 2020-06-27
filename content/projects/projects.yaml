@@ -1,21 +1,37 @@
-# - title: "Ksubaka"
-#   title_detail: "Ksubaka"
-#   category: "UI Design"
-#   slug: "ksubaka-ui"
-#   color: "#EA516A"
-#   images: "kindcody"
-#   cover: "./kindcody/projects-kindcody-cover.jpg"
-- title: "Ksubaka"
-  title_detail: "Ksubaka"
+
+- title: "Ksubaka UI"
+  title_detail: "Ksubaka UI"
   category: "Junior UI/UX Designer"
   slug: "ksubaka"
   color: "#EA516A"
   images: "ksubaka"
-  cover: "./kindcody/projects-kindcody-cover.jpg"
-  desc: "kindcody is an online therapy service that connects counsellors with people in need of counselling. Our platform assists our users with their client base, calendar management and helps them create new connections. Our features range from simple bookings all the way to an online counselling community which enables the growth of their session quality.<br/><br/>
-  Customers are the heart of kindcody and to ensure we do not break it we thoroughly vet all of our counsellors. Our bookings are entirely private between the user and the counsellor with HIPAA compliances as well as end-to-end encryption. We believe in doing the right thing and provide an affordable service regardless of the topic of discussion.<br/><br/><br/>
-  My role in kindcody was creating the brand, brand guidelines, website design and app design for the first phase of the business. The team had a leadership mixture of a software developer, business strategist and creative director.<br/><br/>
-  After sessions of brainstorming with different word combinations, colours schemes and researching the competitors, my team and I hand picked a green pastel as a primary colour because of the representation and reputation it has in the medical industry. To emphasise the emotion of safety, the font we’ve picked for the logo makes use of softer edges and bolder letters which helps us emphasise the emotion we’re trying to showcase"
+  cover: "./ksubaka/projects-ksubaka-cover.jpg"
+  desc: "<h4>CloudShelf</h4>
+  <h6>UI</h6>
+  My focus on one of Ksubaka’s market leading products, the Cloudshelf, was around the UI and asset management. GHD, one of their clients, was a project I was tasked to work on with responsibilities ranging from gathering branding assets to grouping all their product assets and UI.<br/><br/>
+  In the making of multiple Cloudshelves, I faced challenges such as pairing fonts that would be compatible with the client’s respective language characteristics and low quality asset gathering.
+  <h4>Instore Survey</h4>
+  Another product brought by Ksubaka, I was tasked with, was the Smiles Surveys. Its purpose was gathering customer feedback regarding their in store experience for clients such as M&S and Aigle. My main tasks were building the UI, gathering brand guidelines information, applying them accordingly, with tools such as Photoshop, XD and InDesign, and creating physical board/sticker designs for the kiosks themselves.
+  <h4>Online Employee Survey</h4>  
+  Due to the pandemic, Ksubaka had to take some drastic business measures. As a product team, we’ve been tasked to come up with a solution that can provide value to their current customers in the given climate. Their product line-up has had an addition with the introduction of the  Smiles Pulse Check-in for WFH Employees. The product’s capabilities are bubbled around an employee survey whose purpose was to monitor the wellbeing of employees of our current and upcoming clients such as Coca Cola.
+  <br/><br/>The main design idea was purposed to be fun and interactive so employees would want to complete their check-in survey. I’ve come up with ideas such as the spinning wheel at the end of the survey for customer engagement, the badges for continuation achievement and competition leaderboards.
+  <br/><br/>To achieve the fun and interactive UI, I’ve created animations from brand assets using tools such as After Effects, Media Encoder and Premier Pro.
+  <h4>TSK</h4>
+  The Temperature Sensing Kiosk was another project I worked on while at Ksubaka. My tasks for this project were mainly focused around the creation of physical sticker designs for packaging and kiosks for which I have mainly used InDesign and Photoshop.
+  "
+  
+- title: "Ksubaka UX"
+  title_detail: "Ksubaka UX"
+  category: "Junior UI/UX Designer"
+  slug: "ksubaka-ux"
+  color: "#EA516A"
+  images: "ksubaka-ux"
+  cover: "./ksubaka-ux/001.png"
+  desc: "<h4>CloudShelf</h4>
+  <h6>UX</h6>
+  CloudShelf has a built-in dashboard editor for product management/administration. Due to building it from scratch before I joined, the UX/UI was not optimised and in many cases it did not follow Ksubaka’s brand guidelines. The process I went through was creating a wireframe flow in inVision accompanied by labels and explanations for whatever decision was experimental. My next action relied on user feedback which provided me with enough information to adjust the UX for further optimisations to avoid extra mental mapping effort. The way I collected user feedback was by providing users with stories and a number of tasks and observing their performance.
+  <br/><br/>Once the UX proved to be stable enough and the usability performance increased in propotypes with the employees of Ksubaka, I moved over to creating the UI. Due to Ksubaka already having a somewhat built UI assets, I had to review it and ensure it is consistent enough to be usable in the new Cloudshelf Editor. As well as improving it, I had to also extend it due to missing components which were not used in previous products. 
+  <br/><br/>After completing the UI, I provided the test users with a number of prototypes as well as tasks and I’ve iterated on the minor changes spotted from our results."
 - title: "kindcody"
   title_detail: "kindcody"
   category: "App / Web / Branding"

@@ -15,7 +15,7 @@ const GridItem = styled(Link)`
   }
   > span {
     z-index: 10;
-    color: white;
+    color: #333;
     position: absolute;
     left: 0;
     right: 0;
@@ -23,7 +23,7 @@ const GridItem = styled(Link)`
     font-weight: 700;
     font-size: ${props => props.theme.fontSizes[4]};
     padding: ${props => props.theme.space[6]};
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
 
     @media (max-width: ${props => props.theme.breakpoints[3]}) {
       font-size: ${props => props.theme.fontSizes[3]};

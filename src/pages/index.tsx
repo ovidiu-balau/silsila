@@ -32,7 +32,7 @@ const Area = styled(animated.div)`
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 35vw 40vw 25vw;
   grid-template-areas:
-    "first-project first-project about-us"
+    "first-three-projects first-three-projects first-three-projects"
     "three-projects three-projects three-projects";
 
   @media (max-width: ${props => props.theme.breakpoints[3]}) {
@@ -67,13 +67,8 @@ const Area = styled(animated.div)`
   }
 `;
 
-const FirstProject = styled(GridItem)`
-  grid-area: first-project;
-`;
 
-const SecondProject = styled(GridItem)`
-  grid-area: about-us;
-`;
+
 
 const ThreeProjects = styled.div`
   grid-area: three-projects;
@@ -87,8 +82,20 @@ const ThreeProjects = styled.div`
 `;
 
 
+const FirstThreeProjects = styled.div`
+  grid-area: first-three-projects;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: ${props => props.theme.breakpoints[1]}) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+`;
+
+
 const Index: React.FunctionComponent<PageProps> = ({
-  data: { firstProject, secondProject, threeProjects }
+  data: { firstThreeProjects, threeProjects }
 }) => {
   const pageAnimation = useSpring({
     config: config.slow,
@@ -100,22 +107,18 @@ const Index: React.FunctionComponent<PageProps> = ({
     <Layout>
       <SEO />
       <Area style={pageAnimation}>
-        <FirstProject
-          to={firstProject.slug}
-          aria-label={`View project "${firstProject.title}"`}
-        >
-          <Img fluid={firstProject.cover.childImageSharp.fluid} />
-          <span>{firstProject.title}</span>
-        </FirstProject>
-        {secondProject.nodes.map(p => (
-        <SecondProject
-          to={p.slug}
-          aria-label={`View project "${p.title}"`}
-        >
-          <Img fluid={p.cover.childImageSharp.fluid} />
-          <span>{p.title}</span>
-        </SecondProject>
-        ))}
+        <FirstThreeProjects>
+          {firstThreeProjects.nodes.map(project => (
+            <GridItem
+              to={project.slug}
+              key={project.slug}
+              aria-label={`View project "${project.title}"`}
+            >
+              <Img fluid={project.cover.childImageSharp.fluid} />
+              <span>{project.title}</span>
+            </GridItem>
+          ))}
+        </FirstThreeProjects>      
         <ThreeProjects>
           {threeProjects.nodes.map(project => (
             <GridItem
@@ -137,18 +140,7 @@ export default Index;
 
 export const query = graphql`
   query Index {
-    firstProject: projectsYaml {
-      title
-      slug
-      cover {
-        childImageSharp {
-          fluid(quality: 95, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-    secondProject: allProjectsYaml(limit: 1, skip: 1) {
+    firstThreeProjects: allProjectsYaml(limit: 3, skip: 0) {
       nodes {
         title
         slug
@@ -161,7 +153,7 @@ export const query = graphql`
         }
       }
     }
-    threeProjects: allProjectsYaml(limit: 3, skip: 2) {
+    threeProjects: allProjectsYaml(limit: 3, skip: 3) {
       nodes {
         title
         slug
