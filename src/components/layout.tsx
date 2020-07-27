@@ -282,6 +282,13 @@ const Layout = ({ children, color }: LayoutProps) => {
                 <a className="navlink cv" target="_blank" href="/cv.pdf">
                   Download resume
                 </a>
+               <p style={{marginBottom: 0}}>Illustrator, XD</p>
+               <p style={{marginBottom: 0}}>Photoshop, InDesign</p>
+               <p style={{marginBottom: 0}}>Sketch/InVision/Zeplin</p>
+               <p style={{marginBottom: 0}}>After Effects</p>
+               <p style={{marginBottom: 0}}>Media Encoder</p>
+               <p style={{marginBottom: 0}}>Premier Pro</p>
+               
               </Nav>
             </Flex>
           </SideBarInner>
